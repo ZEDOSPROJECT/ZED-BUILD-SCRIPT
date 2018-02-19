@@ -25,6 +25,8 @@ else
 	read
 	sudo update-alternatives --config default.plymouth
 	sudo update-initramfs -u
+    echo "Cleaning . . ."
+    sudo apt purge ubuntu-mate-welcome -y
 	clear
 	echo "ZED is prepared to build"
 	echo "To Build the ISO use Pinguy Builder"

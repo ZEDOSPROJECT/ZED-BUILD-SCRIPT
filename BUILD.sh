@@ -18,7 +18,7 @@ else
 	echo "Downloading ZED OS Files"
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
 	echo "Installing ZED OS Files"
-	tar -zxvf update.tar.gz -C / &> /dev/null
+	tar -cvpzf update.tar.gz -C / &> /dev/null
 	rm -zxvf update.tar.gz
     	sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"

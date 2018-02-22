@@ -10,8 +10,8 @@ else
 	sudo apt-get install -f -y &> /dev/null
 	sudo dpkg -i masalla_0.9_all.deb &> /dev/null
 	sudo apt-get install -f -y &> /dev/null
-    	sudo dpkg -i indicator-keylock_3.1.0_amd64.deb &> /dev/null
-    	sudo apt-get install -f -y &> /dev/null
+    sudo dpkg -i indicator-keylock_3.1.0_amd64.deb &> /dev/null
+    sudo apt-get install -f -y &> /dev/null
 	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork  -y &> /dev/null
 	rm -rf /usr/share/backgraunds
 	clear
@@ -19,8 +19,9 @@ else
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
 	echo "Installing ZED OS Files"
 	tar -zxvf update.tar.gz -C / &> /dev/null
-	rm -zxvf update.tar.gz
-    	sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
+	rm update.tar.gz
+    sudo chmod +x -R /sbin
+    sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"
 	read
 	sudo update-alternatives --config default.plymouth

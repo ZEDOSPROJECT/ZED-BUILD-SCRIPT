@@ -6,8 +6,8 @@ if [[ $EUID -ne 0 ]]; then
 else
 	cd FILES
 	echo "Installing necessary packages"
-    sudo add-apt-repository ppa:nathan-renniewaldock/flux -y
-    sudo add-apt-repository ppa:bhdouglass/indicator-remindor -y
+    sudo add-apt-repository ppa:nathan-renniewaldock/flux
+    sudo add-apt-repository ppa:bhdouglass/indicator-remindor
 	sudo dpkg -i pinguybuilder.deb &> /dev/null
 	sudo apt install -f -y &> /dev/null
 	sudo dpkg -i masalla_0.9_all.deb &> /dev/null

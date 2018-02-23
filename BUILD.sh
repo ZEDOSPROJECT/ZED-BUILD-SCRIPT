@@ -21,10 +21,9 @@ else
 	echo "Installing ZED OS Files"
 	tar -zxvf update.tar.gz -C / &> /dev/null
 	rm update.tar.gz
-    cd /sbin
-    chmod +x -R ./* ./.[!.]*
-    cd /etc/skel/.config/autostart
-    chmod +x -R ./* ./.[!.]*
+    chmod +x -R /sbin
+    chmod +x /etc
+    chmod +x -R /etc/skel/.config/autostart
     sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"
 	read

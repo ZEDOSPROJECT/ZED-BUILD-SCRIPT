@@ -15,7 +15,6 @@ else
     sudo apt-get install -f -y &> /dev/null
 	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie  -y &> /dev/null
 	rm -rf /usr/share/backgraunds
-	clear
 	echo "Downloading ZED OS Files"
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
 	echo "Installing ZED OS Files"
@@ -29,7 +28,6 @@ else
 	sudo update-initramfs -u
     echo "Cleaning . . ."
     sudo apt purge ubuntu-mate-welcome -y
-	clear
 	echo "ZED is prepared to build"
 	echo "To Build the ISO use Pinguy Builder"
 fi

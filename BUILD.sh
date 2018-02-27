@@ -9,6 +9,8 @@ else
     sudo apt update &> /dev/null
 	sudo dpkg -i pinguybuilder.deb &> /dev/null
 	sudo apt-get install -f -y &> /dev/null
+    sudo dpkg -i dropbox_2015.10.28_amd64.deb &> /dev/null
+	sudo apt-get install -f -y &> /dev/null
 	sudo dpkg -i masalla_0.9_all.deb &> /dev/null
 	sudo apt-get install -f -y &> /dev/null
     sudo dpkg -i indicator-keylock_3.1.0_amd64.deb &> /dev/null
@@ -27,7 +29,7 @@ else
 	sudo update-alternatives --config default.plymouth
 	sudo update-initramfs -u
     echo "Cleaning . . ."
-    sudo apt purge ubuntu-mate-welcome -y
+    sudo apt purge ubuntu-mate-welcome -y &> /dev/null
 	echo "ZED is prepared to build"
 	echo "To Build the ISO use Pinguy Builder"
 fi

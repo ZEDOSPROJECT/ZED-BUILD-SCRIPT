@@ -7,14 +7,8 @@ else
 	cd FILES
 	echo "Installing necessary packages"
     sudo apt update &> /dev/null
-	sudo dpkg -i pinguybuilder.deb &> /dev/null
+	sudo dpkg -i *.deb &> /dev/null
 	sudo apt-get install -f -y &> /dev/null
-    sudo dpkg -i dropbox_2015.10.28_amd64.deb &> /dev/null
-	sudo apt-get install -f -y &> /dev/null
-	sudo dpkg -i masalla_0.9_all.deb &> /dev/null
-	sudo apt-get install -f -y &> /dev/null
-    sudo dpkg -i indicator-keylock_3.1.0_amd64.deb &> /dev/null
-    sudo apt-get install -f -y &> /dev/null
 	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie  -y &> /dev/null
 	rm -rf /usr/share/backgraunds
 	echo "Downloading ZED OS Files"

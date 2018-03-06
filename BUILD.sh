@@ -23,7 +23,7 @@ else
 	sudo update-alternatives --config default.plymouth
 	sudo update-initramfs -u
     echo "Cleaning . . ."
-    sudo apt purge ubuntu-mate-welcome -y &> /dev/null
+    sudo apt purge ubuntu-mate-welcome gnome-keyring -y &> /dev/null
 	echo "ZED is prepared to build"
 	echo "To Build the ISO use Pinguy Builder"
 fi

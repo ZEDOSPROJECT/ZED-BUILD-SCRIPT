@@ -6,9 +6,9 @@ if [[ $EUID -ne 0 ]]; then
 else
 	cd FILES
     sudo apt update
-	sudo dpkg -i *.deb
-	sudo apt-get install -f -y
 	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie  -y
+    sudo dpkg -i *.deb
+    sudo apt install -f -y
 	rm -rf /usr/share/backgraunds
 	echo "Downloading ZED OS Files"
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz

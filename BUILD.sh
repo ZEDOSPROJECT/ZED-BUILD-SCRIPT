@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 else
 	cd FILES
     sudo apt update
-	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie  -y
+	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie -y
     sudo dpkg -i *.deb
     sudo apt install -f -y
 	rm -rf /usr/share/backgraunds
@@ -22,7 +22,7 @@ else
 	sudo update-alternatives --config default.plymouth
 	sudo update-initramfs -u
     echo "Cleaning . . ."
-    sudo apt purge ubuntu-mate-welcome gnome-keyring -y &> /dev/null
+    sudo apt purge ubuntu-mate-welcome gnome-keyring blueman -y &> /dev/null
     sudo apt autoremove -y
     sudo apt autoclean -y
 	echo "ZED is prepared to build"

@@ -26,5 +26,4 @@ else
     sudo apt autoremove -y
     sudo apt autoclean -y
 	echo "ZED is prepared to build"
-	echo "To Build the ISO use Pinguy Builder"
 fi

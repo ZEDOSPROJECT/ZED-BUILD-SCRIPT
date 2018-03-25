@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 else
 	cd FILES
     sudo apt update
-	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie npm -y
+	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie libopenimageio1.6 libboost1.62-all-dev libopenvdb3.2 libavdevice-dev libjemalloc1 libspnav0 npm -y
     sudo dpkg -i *.deb
     sudo apt install -f -y
     sudo npm install electron -g

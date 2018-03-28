@@ -22,6 +22,7 @@ else
 	read
 	sudo update-alternatives --config default.plymouth
 	sudo update-initramfs -u
+    sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/core.theme
     echo "Cleaning . . ."
     sudo apt purge ubuntu-mate-welcome gnome-keyring blueman -y &> /dev/null
     sudo apt autoremove -y

@@ -8,10 +8,11 @@ else
     sudo add-apt-repository ppa:gambas-team/gambas3 -y
     sudo apt update
     sudo dpkg -i *.deb
-	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter gambas3 mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie libopenimageio1.6 libboost1.62-all-dev libopenvdb3.2 libavdevice-dev libjemalloc1 libspnav0 npm -y
+	sudo apt install xclip xfwm4 xscreensaver xscreensaver-data python-pyaudio shutter mplayer ubuntu-mate-core ubuntu-mate-desktop lightdm lightdm-gtk-greeter ubuntu-artwork devilspie libopenimageio1.6 libboost1.62-all-dev libopenvdb3.2 libavdevice-dev libjemalloc1 libspnav0 npm -y
     sudo apt install -f -y
     sudo npm install electron -g
 	rm -rf /usr/share/backgraunds
+    sudo apt install gambas3 -y
 	echo "Downloading ZED OS Files"
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
 	echo "Installing ZED OS Files"

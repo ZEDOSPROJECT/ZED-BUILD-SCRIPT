@@ -16,6 +16,7 @@ else
 	done
     dpkg -i *.deb
     apt install -f -y
+    apt-get install --reinstall network-manager network-manager-gnome
     npm install electron -g
 	rm -rf /usr/share/backgraunds
     apt install gambas3 -y

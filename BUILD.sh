@@ -38,7 +38,7 @@ else
 	pkexec chown root:root /etc/skel -R
 	chmod 777 -R /etc/skel/
 	echo "Cleaning . . ."
-	apt purge ubuntu-mate-welcome gnome-keyring postgresql-* blueman -y &> /dev/null
+	apt purge ubuntu-mate-welcome gnome-keyring postgresql-* libreoffice* blueman -y &> /dev/null
 	apt autoremove -y
 	apt autoclean -y
 	echo "ZED is prepared to build"

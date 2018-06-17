@@ -20,6 +20,7 @@ else
 	npm install electron -g
 	rm -rf /usr/share/backgraunds
 	apt install gambas3 -y
+	rm -fr /usr/share/backgrounds
 	echo "Downloading ZED OS Files"
 	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
 	echo "Installing ZED OS Files"

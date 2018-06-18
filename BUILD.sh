@@ -31,11 +31,9 @@ else
 	update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"
 	read
-	pkexec chown root:root /etc/sudoers /etc/sudoers.d -R
 	update-alternatives --config default.plymouth
 	update-initramfs -u
 	update-alternatives --set x-cursor-theme /etc/X11/cursors/core.theme
-	pkexec chown root:root /etc/skel -R
 	chmod 777 -R /etc/skel/
 	echo "Cleaning . . ."
 	apt purge ubuntu-mate-welcome gnome-keyring firefox* postgresql-* libreoffice* blueman -y &> /dev/null

@@ -27,7 +27,6 @@ else
 	tar -zxvf update.tar.gz -C / &> /dev/null
 	rm update.tar.gz
 	chmod +x -R /sbin
-	pkexec chown root:root /etc/sudoers /etc/sudoers.d -R
 	update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"
 	read

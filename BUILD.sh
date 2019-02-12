@@ -20,7 +20,7 @@ else
 	rm -rf /usr/share/backgraunds
 	apt install gambas3 -y
 	echo "Downloading ZED OS Files"
-	wget https://zedfiles.blob.core.windows.net/updates/update.tar.gz
+	wget https://zed-os.sourceforge.io/updates/update.tar.gz
 	echo "Installing ZED OS Files"
 	tar -zxvf update.tar.gz -C / &> /dev/null
 	rm update.tar.gz

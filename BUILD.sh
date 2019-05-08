@@ -38,6 +38,15 @@ else
 	apt update
 	apt upgrade -y
 	echo "Cleaning . . ."
+	rm /etc/skel/Desktop/.noremove
+	rm /etc/skel/Documents/.noremove
+	rm /etc/skel/Downloads/.noremove
+	rm /etc/skel/Music/.noremove
+	rm /etc/skel/Pictures/.noremove	
+	rm /etc/skel/Public/.noremove
+	rm /etc/skel/Templates/.noremove
+	rm /etc/skel/Videos/.noremove	
+	rn /etc/skel/.config/zed/.noremove	
 	apt purge ubuntu-mate-welcome firefox* libreoffice* blueman -y &> /dev/null
 	apt autoremove -y
 	apt autoclean -y

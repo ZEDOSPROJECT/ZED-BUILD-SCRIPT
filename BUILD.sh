@@ -19,12 +19,13 @@ else
 	npm install electron -g
 	rm -rf /usr/share/backgraunds
 	apt install gambas3 -y
+	cd ..
 	echo "Downloading ZED OS Files"
 	git clone https://github.com/ZEDOSPROJECT/ZED-ROOT-OS.git
 	echo "Installing ZED OS Files"
 	cd ZED-ROOT-OS
-	rm -rf ZED-ROOT-OS/.git
-	cp -Rf ZED-ROOT-OS/ /
+	rm -rf .git
+	cp -Rf . /
 	cd ..
 	rm -rf ZED-ROOT-OS
 	chmod +x -R /sbin

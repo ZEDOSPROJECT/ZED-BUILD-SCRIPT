@@ -20,10 +20,13 @@ else
 	rm -rf /usr/share/backgraunds
 	apt install gambas3 -y
 	echo "Downloading ZED OS Files"
-	wget https://zed-os.sourceforge.io/UPDATES/zed/2018/update.tar.gz
+	git clone https://github.com/ZEDOSPROJECT/ZED-ROOT-OS.git
 	echo "Installing ZED OS Files"
-	tar -zxvf update.tar.gz -C / &> /dev/null
-	rm update.tar.gz
+	cd ZED-ROOT-OS
+	rm -rf ZED-ROOT-OS/.git
+	cp -Rf ZED-ROOT-OS/ /
+	cd ..
+	rm -rf ZED-ROOT-OS
 	chmod +x -R /sbin
 	update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/zed/zed.plymouth 100
 	echo "Select ZED OS Plymouth afther press ENTER"

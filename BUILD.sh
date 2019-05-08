@@ -4,9 +4,6 @@ if [[ $EUID -ne 0 ]]; then
 	echo "This script must be run as root" 1>&2
 	exit 1
 else
-	echo "Updating system"
-	apt update
-	apt upgrade -y
 	echo "Installing dependenices"
 	cd FILES
 	add-apt-repository ppa:gambas-team/gambas3 -y
@@ -37,6 +34,9 @@ else
 	update-alternatives --set x-cursor-theme /etc/X11/cursors/core.theme
 	chmod 777 -R /etc/skel/
 	chmod 777 -R /usr/share/themes
+	echo "Updating system"
+	apt update
+	apt upgrade -y
 	echo "Cleaning . . ."
 	apt purge ubuntu-mate-welcome firefox* libreoffice* blueman -y &> /dev/null
 	apt autoremove -y

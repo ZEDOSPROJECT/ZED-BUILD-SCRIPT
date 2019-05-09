@@ -46,7 +46,7 @@ else
 	rm /etc/skel/Public/.noremove
 	rm /etc/skel/Templates/.noremove
 	rm /etc/skel/Videos/.noremove	
-	rn /etc/skel/.config/zed/.noremove	
+	rm /etc/skel/.config/zed/.noremove	
 	apt purge ubuntu-mate-welcome firefox* libreoffice* blueman -y &> /dev/null
 	apt autoremove -y
 	apt autoclean -y
